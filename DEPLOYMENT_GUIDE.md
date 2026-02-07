@@ -48,8 +48,15 @@ Vercel is made by the Next.js team and offers the easiest deployment experience.
 
 2. **In GoDaddy DNS Settings:**
    - Log in to GoDaddy
-   - Go to "My Products" → "DNS" for testhubble.com
-   - Add/Update these DNS records:
+   - Go to "My Products" → testhubble.com → "DNS"
+   
+   **IMPORTANT: If you see "DNSZoneExternalNameserver":**
+   - Click on "Nameservers" section
+   - Click "Change" → Select "I'll use my own nameservers"
+   - Set to: `ns1.godaddy.com` and `ns2.godaddy.com`
+   - Click "Save" (wait a few minutes for changes to take effect)
+   
+   **Then add/Update these DNS records:**
 
    **For Root Domain (testhubble.com):**
    ```
